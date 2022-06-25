@@ -1,0 +1,58 @@
+### Obtener todos los drones
+GET https://localhost:7104/api/Drone
+
+### Obtener todos los drones para ser cargados
+GET https://localhost:7104/api/Drone/GetAvailable
+
+### Obtener un drone
+GET https://localhost:7104/api/Drone/Raptor01
+
+### Obtener la bateria de un drone
+GET https://localhost:7104/api/Drone/GetBattery/Raptor01
+
+### Obtener el peso de un drone
+GET https://localhost:7104/api/Drone/GetWeigth/Raptor01
+
+### Registrar drone
+POST https://localhost:7104/api/Drone
+Content-Type: application/json
+
+{
+    "numberOfSerie": "Raptor04",
+    "weigth": 250,
+    "model": 1,
+    "batery": 100
+}
+
+### Actualizar drone
+PUT https://localhost:7104/api/Drone
+Content-Type: application/json
+
+{
+    "numberOfSerie": "Raptor03",
+    "weigth": 300,
+    "model": 1,
+    "batery": 25,
+    "status": 3
+}
+
+### Cargar drone con medicamentos
+PUT https://localhost:7104/api/Drone/PutMedicine/Raptor01
+Content-Type: application/json
+
+[{
+    "name": "afdsyatdf123",
+    "weigth": 300,
+    "code": "DTRST_13",
+    "image": ""
+}
+,{
+    "name": "abcded123",
+    "weigth": 300,
+    "code": "DTRST_24",
+    "image": ""
+}]    
+
+
+### Eliminar drone
+DELETE https://localhost:7104/api/Drone/3

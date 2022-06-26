@@ -119,12 +119,11 @@ namespace DroneTech.Controllers
             else
             {
                 if(existDrone.Status == Status.INACTIVO || existDrone.Status == Status.CARGADO){
-                    var oldInventary = existDrone.Medicines;
+                    int lenInventary = existDrone.Medicines.Count;
                     existDrone.Medicines.AddRange(Medicines);
-                    
                     ValidationResult result = _validator.Validate(existDrone);
                     if(!result.IsValid){
-                        existDrone.Medicines = oldInventary;
+                        existDrone.Medicines.RemoveRange(lenInventary, Medicines.Count);
                         return BadRequest(result.Errors);
                     }
                     //update

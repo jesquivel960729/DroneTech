@@ -28,3 +28,7 @@ C:\Users\Lamis\Desktop\Trabajo\DroneTech\obj\Debug\net6.0\ref\DroneTech.dll
 C:\Users\Lamis\Desktop\Trabajo\DroneTech\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Lamis\Desktop\Trabajo\DroneTech\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Lamis\Desktop\Trabajo\DroneTech\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Lamis\Desktop\Trabajo\DroneTech\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Lamis\Desktop\Trabajo\DroneTech\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Lamis\Desktop\Trabajo\DroneTech\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Lamis\Desktop\Trabajo\DroneTech\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
